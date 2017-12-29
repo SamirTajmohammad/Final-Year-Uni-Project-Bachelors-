@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context="com.example.sammay.loginactivity.LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="362dp"
+        android:layout_height="501dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="174dp"
+            android:ems="10"
+            android:hint="@string/City_Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/LoginPassword"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/editTextEmail"
+            app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="79dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="45dp"
+            android:background="#781c2e"
+            android:text="@string/Login"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@+id/editTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+            tools:text="Log in" />
+
+        <Button
+            android:id="@+id/buttonSignup"
+            android:layout_width="79dp"
+            android:layout_height="41dp"
+            android:layout_weight="0.50"
+            android:background="#781c2e"
+            android:text="@string/Register"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBaseline_toBaselineOf="@+id/buttonLogin"
+            app:layout_constraintBottom_toBottomOf="@+id/buttonLogin"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPassword"
+            app:layout_constraintRight_toRightOf="@+id/editTextPassword" />
+
+        <TextView
+            android:id="@+id/textViewInvalidLoginDetails"
+            android:layout_width="212dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="192dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginRight="72dp"
+            android:text="@string/InvalidLoginDetails"
+            app:layout_constraintBaseline_toBaselineOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="332dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="140dp"
+            android:clickable="false"
+            android:fontFamily="serif"
+            android:text="@string/Login"
+            android:textColor="@android:color/background_dark"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Log in" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

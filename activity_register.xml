@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sammay.loginactivity.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/editTextStudentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRegister"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="@string/Student_ID"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextLoginID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextStudentID"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/Login_ID"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextLoginID"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/City_Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="@string/Fullname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextFullname"
+            android:layout_alignStart="@+id/editTextFullname"
+            android:layout_below="@+id/editTextFullname"
+            android:ems="10"
+            android:hint="@string/Register_Password"
+            android:inputType="textVisiblePassword" />
+
+        <EditText
+            android:id="@+id/editTextModule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextDegree"
+            android:layout_alignStart="@+id/editTextDegree"
+            android:layout_below="@+id/editTextDegree"
+            android:ems="10"
+            android:hint="@string/Module"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextPassword"
+            android:layout_alignStart="@+id/editTextPassword"
+            android:layout_below="@+id/editTextPassword"
+            android:ems="10"
+            android:hint="@string/Degree"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextModule"
+            android:layout_alignStart="@+id/editTextModule"
+            android:layout_below="@+id/editTextModule"
+            android:ems="10"
+            android:hint="@string/Room"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextRoom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/Submit" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
